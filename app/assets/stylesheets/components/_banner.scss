@@ -1,0 +1,21 @@
+.banner {
+  background-image: url('myke-simon-atsUqIm3wxo-unsplash (1).jpg');
+  height: 1000px;
+  background-size: cover;
+  flex-wrap: wrap;
+
+  h1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+  }
+}

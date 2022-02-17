@@ -1,0 +1,15 @@
+<%# show name of list and all movies in a specific list %>
+<h2><%= @list.name %></h2>
+<h4>Here are all your bookmarks:</h4>
+<ul class="list-group">
+  <li class="list-group-item">
+    <% @list.bookmarks.each do |bookmark| %>
+    <p><%= bookmark.movie.title %>
+      <em>--<%= bookmark.comment %></em>
+      <%= link_to "Delete", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" } %>
+    </p>
+    <% end %>
+  </li>
+</ul>
+<%= link_to "Back to all lists", lists_path %>
+<%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
