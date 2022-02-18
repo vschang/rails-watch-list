@@ -8,11 +8,12 @@
    <h3><%= link_to "Create a new list", new_list_path, class: "btn btn-dark" %></h3>
   </div>
 </div>
-
+</div class='container'>
   <div class="d-flex justify-content-around">
     <% @lists.each do |list| %>
-    <div class="card p-5 m-5" style="width: 300px" style="height: 150px">
+    <div class="card p-2 m-3" style="width: 400px" style="height: 150px">
     <img src='<%= cl_image_path list.photo.key %>' >
         <h3 class="card-title white-text"><%= link_to list.name, list_path(list) %></h3>
   </div>
         <% end %>
+  </div>
