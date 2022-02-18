@@ -1,21 +1,31 @@
-.banner {
+.banner{
   background-image: url('myke-simon-atsUqIm3wxo-unsplash (1).jpg');
   height: 1000px;
   background-size: cover;
-  flex-wrap: wrap;
-
   h1 {
     font-size: 70px;
     font-weight: 700;
     font-style: italic;
     color: white;
-    text-align: center;
   }
+}
 
-  h3 {
-    font-size: 30px;
-    font-weight: 300;
+.banner-show{
+  background-image: url('clay-banks-hwLAI5lRhdM-unsplash (1).jpg');
+  height: 800px;
+  background-size: cover;
+  h1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-style: italic;
     color: white;
-    text-align: center;
   }
+  h3{
+    color: white;
+  }
+}
+
+.card-background{
+  background-image: url('jakob-owens-CiUR8zISX60-unsplash.jpg');
+  background-size: cover;
 }

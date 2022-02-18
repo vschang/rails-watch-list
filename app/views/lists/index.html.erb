@@ -1,4 +1,7 @@
 <%# show all lists %>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Watchlist</a>
+  </nav>
 <div class='banner mb-5'>
 <h1 class="d-flex justify-content-center align-content-stretch flex-wrap">Welcome to Your Watchlists</h1>
   <div class="d-flex justify-content-center align-content-stretch flex-wrap">
@@ -8,7 +11,7 @@
 <div class='container'>
   <div class="d-flex flex-wrap justify-content-around">
     <% @lists.each do |list| %>
-    <div class="card p-5 m-5 card-background">
-        <h3 class="card-title"><%= link_to list.name, list_path(list) %></h3>
+    <div class="card p-5 m-5 card-background" style="width: 300px" style="height: 150px">
+        <h3 class="card-title white-text"><%= link_to list.name, list_path(list) %></h3>
     </div>
     <% end %>
